@@ -1,5 +1,5 @@
 # LVGL demonstration
-#### Raspberry Pi with official 7" screen
+#### Raspberry Pi with 2.1 inches round screen with pixels 480*480
 ---
 Based on LVGL version 7.0.0
 
@@ -8,7 +8,7 @@ The repository was cloned on 23 May 2020 from [the lvgl repository](https://gith
 LVGL documentation is [located here](https://docs.lvgl.io/v7).
 
 ---
-This repository is a working implementation of LVGL (Little and Versatile Embedded Graphics Library) on  Raspian with the official 7" LCD screen.
+This repository is a working implementation of LVGL (Little and Versatile Embedded Graphics Library) on  2.1 round screen.
 
 This implementation uses the linux frame buffer interface.
 ___
