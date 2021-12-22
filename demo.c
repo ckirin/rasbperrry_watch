@@ -4,7 +4,8 @@
 #include "lvgl/lv_examples/lv_examples.h"
 #include <unistd.h>
 //#include <stdio.h>
-
+#include "./generated/gui_guider.h"
+#include "./generated/events_init.h"
 // display buffer size - not sure if this size is really needed
 #define LV_BUF_SIZE 230400		// 480x480
 // A static variable to store the display buffers
@@ -12,7 +13,7 @@ static lv_disp_buf_t disp_buf;
 // Static buffer(s). The second buffer is optional
 static lv_color_t lvbuf1[LV_BUF_SIZE];
 static lv_color_t lvbuf2[LV_BUF_SIZE];
-
+lv_ui guider_ui;
 
 int main(void)
 {
@@ -49,10 +50,11 @@ int main(void)
 	lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
 */
 
-	lv_demo_widgets();
+	//lv_demo_widgets();
 //	lv_demo_benchmark();
 //	lv_demo_stress();
-
+         setup_ui(&guider_ui);
+	events_init(&guider_ui);
 	// Handle LitlevGL tasks (tickless mode)
 	while(1) {
 		lv_tick_inc(5);

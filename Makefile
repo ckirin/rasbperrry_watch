@@ -23,7 +23,8 @@ LVGL_DIR = lvgl
 include $(LVGL_DIR)/lvgl.mk
 include $(LVGL_DIR)/lv_drivers/lv_drivers.mk
 include $(LVGL_DIR)/lv_examples/lv_examples.mk
-
+PRJ_DIR=.
+include $(PRJ_DIR)/generated/generated.mk
 # folder for object files
 OBJDIR = ./obj
 
